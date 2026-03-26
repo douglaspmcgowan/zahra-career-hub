@@ -198,7 +198,7 @@ UC Berkeley is one of the largest employers in the East Bay (~14,000 staff). The
 ### A. Types of UC Berkeley Positions
 
 #### Staff Positions (career/contract)
-- **UC Berkeley jobs portal:** jobs.berkeley.edu
+- **UC Berkeley jobs portal:** [jobs.berkeley.edu](https://jobs.berkeley.edu)
 - Departments that match her skills:
   - **Cal Athletics:** Marketing, communications, event coordination, athletic administration, academic support for student-athletes
   - **Admissions & Enrollment:** Admissions reader, outreach coordinator, communications
@@ -240,7 +240,7 @@ Cal Athletics is its own large operation with many staff roles:
 - **Keeps her in Berkeley:** Yes, on campus.
 
 ### Next steps:
-1. Set up job alerts on jobs.berkeley.edu
+1. Set up job alerts on [jobs.berkeley.edu](https://jobs.berkeley.edu)
 2. Search specifically in Cal Athletics, Lawrence Hall of Science, Student Affairs, and Marketing/Communications
 3. Network with current Cal Athletics staff — her status as a current athlete gives her direct access
 4. Ask her coaches and the athletic department for internal referrals
@@ -256,7 +256,7 @@ With a BS in Biology, Zahra could work as a research assistant or lab manager in
 
 #### How it works
 - UC Berkeley has hundreds of biology research labs across multiple departments (MCB, IB, Plant Biology, Public Health, etc.).
-- Research assistant / lab manager / research coordinator positions are regularly posted on jobs.berkeley.edu.
+- Research assistant / lab manager / research coordinator positions are regularly posted on [jobs.berkeley.edu](https://jobs.berkeley.edu).
 - These are staff positions, not student positions, so they require work authorization.
 - Many require a BS in biology or related field — her degree qualifies.
 - Pay: ~$45,000-$60,000/year for research assistants, more for lab managers.
@@ -303,7 +303,7 @@ The J-1 visa has a "Research Scholar" category that allows foreign nationals to 
 - **Check with ISSO:** Can her marketing certificate program support CPT for a relevant internship?
 
 ### Next steps:
-1. Search jobs.berkeley.edu for "research assistant" and "lab manager" in biology departments
+1. Search [jobs.berkeley.edu](https://jobs.berkeley.edu) for "research assistant" and "lab manager" in biology departments
 2. Contact biology professors she's connected with about lab openings
 3. Ask ISSO about J-1 research scholar option and 2-year home residency implications for Australians
 4. Inquire about CPT eligibility through her Extension certificate program
@@ -384,19 +384,19 @@ The J-1 visa has a "Research Scholar" category that allows foreign nationals to 
 #### Game Plan (Australian Institute of Sport)
 - Not a financial fellowship but a career transition support program for Australian athletes.
 - Provides career counseling, skills assessment, networking.
-- She should register: ais.gov.au
+- She should register: [ais.gov.au](https://www.ais.gov.au)
 
 #### Australian-American Association Scholarships
 - Various small scholarships for Australians studying or working in the US.
 - Typically $5,000-$15,000.
-- Check australianamerican.org.
+- Check [australianamerican.org](https://www.australianamerican.org).
 
 ### E. Bay Area-Specific Fellowships and Training Programs
 
 #### UCSF/UC Berkeley Joint Programs
 - Various funded training programs in health sciences, public health, bioinformatics.
 
-#### Gladstone Institutes (affiliated with UCSF)
+#### [Gladstone Institutes](https://gladstone.org) (affiliated with UCSF)
 - Post-baccalaureate research programs in biology/biomedical sciences.
 - Paid positions (~$35,000-$40,000/year).
 - Visa sponsorship possible (J-1).
@@ -463,9 +463,9 @@ Several institutions offer structured post-bac research programs that provide:
 
 Several Christian service programs exist that could potentially provide a pathway:
 
-#### InterVarsity's Urbana / Ministry Training Programs
+#### [InterVarsity](https://intervarsity.org)'s Urbana / Ministry Training Programs
 - Short-term (1-2 year) ministry training and campus staff positions.
-- InterVarsity does hire international staff in some cases.
+- [InterVarsity](https://intervarsity.org) does hire international staff in some cases.
 - Would require R-1 visa (see Section 9).
 
 #### YWAM (Youth With A Mission)
@@ -480,14 +480,14 @@ Several Christian service programs exist that could potentially provide a pathwa
 
 ### D. Global Service Year Programs
 
-#### Year Up
+#### [Year Up](https://www.yearup.org)
 - Workforce development program for young adults 18-29.
 - Provides training, internship, stipend.
 - **Requires work authorization** — could work if she has OPT.
 - Bay Area locations.
 - Realism: MODERATE if she has OPT.
 
-#### Venture for America
+#### [Venture for America](https://ventureforamerica.org)
 - Fellowship placing recent graduates at startups in emerging cities.
 - **Requires US work authorization** (but does not need to be a citizen).
 - NOT in Berkeley (focuses on other cities).
@@ -665,13 +665,13 @@ Entrepreneurship is viable for Australians through E-2, but the capital requirem
   3. The role must be genuinely religious in nature.
 
 ### Potential employers
-- **Campus ministries at UC Berkeley:** InterVarsity, Cru, Reformed University Fellowship, Chi Alpha, Newman Center
+- **Campus ministries at UC Berkeley:** [InterVarsity](https://intervarsity.org), Cru, Reformed University Fellowship, Chi Alpha, Newman Center
 - **Local churches:** First Presbyterian Church of Berkeley, Cornerstone Community Church, Epic Church Berkeley, various others
 - **Faith-based nonprofits:** World Vision, Compassion International, International Justice Mission (though these may not be in Berkeley)
 - **Christian camps and retreat centers:** Mt. Hermon, Forest Home
-- **Young Life / Fellowship of Christian Athletes (FCA):** Ministry organizations working with athletes — direct connection to her background
+- **Young Life / [Fellowship of Christian Athletes (FCA)](https://www.fca.org):** Ministry organizations working with athletes — direct connection to her background
 
-### Fellowship of Christian Athletes (FCA) — Special Note
+### [Fellowship of Christian Athletes (FCA)](https://www.fca.org) — Special Note
 - FCA specifically ministers to athletes and coaches.
 - They hire staff to run programs on college campuses and in communities.
 - Zahra's combination of D1 athletics + Christian faith makes her an ideal FCA staff candidate.
@@ -691,7 +691,7 @@ Entrepreneurship is viable for Australians through E-2, but the capital requirem
 - She meets the faith criterion if she's been active for 2+ years.
 - The challenge is finding a qualifying full-time religious position.
 - FCA is the strongest lead given her athletic background.
-- Campus ministry positions (InterVarsity, Cru) are also realistic.
+- Campus ministry positions ([InterVarsity](https://intervarsity.org), Cru) are also realistic.
 
 ### Cost: Filing fee ~$460 + legal fees ~$2,000-$5,000. The religious organization files and typically pays.
 ### Keeps her in Berkeley: Yes, if the position is in Berkeley.
@@ -699,7 +699,7 @@ Entrepreneurship is viable for Australians through E-2, but the capital requirem
 ### Next steps:
 1. Confirm her denominational membership duration (needs 2+ years).
 2. Contact FCA about campus staff positions at UC Berkeley.
-3. Reach out to InterVarsity, Cru, and other campus ministries about staff openings.
+3. Reach out to [InterVarsity](https://intervarsity.org), Cru, and other campus ministries about staff openings.
 4. Connect with local church leadership about full-time ministry positions.
 5. Consult an immigration attorney about R-1 eligibility.
 
@@ -736,7 +736,7 @@ Entrepreneurship is viable for Australians through E-2, but the capital requirem
 #### Salary: $55,000-$75,000/year for Bay Area public school teachers.
 #### Keeps her in Berkeley: Yes (Berkeley Unified School District and surrounding districts).
 
-### B. Teach for America (TFA)
+### B. [Teach for America](https://www.teachforamerica.org) (TFA)
 
 #### What it is
 - 2-year teaching fellowship placing college graduates in underserved schools.
@@ -792,7 +792,7 @@ Entrepreneurship is viable for Australians through E-2, but the capital requirem
 | Pathway | Requirements | Visa | Realism | Salary |
 |---------|-------------|------|---------|--------|
 | Emergency credential | BS + CBEST/CSET | E-3/H-1B (school sponsors) | MOD-HIGH | $55-75K |
-| Teach for America | BS + work auth | Needs OPT | MOD | ~$50-60K |
+| [Teach for America](https://www.teachforamerica.org) | BS + work auth | Needs OPT | MOD | ~$50-60K |
 | SF/Oakland Teacher Residency | BS + work auth | Needs OPT initially | MOD | Stipend + credential |
 | Private school | BS | E-3/H-1B possible | MOD | $50-80K |
 | UC Berkeley GSI | Enrolled in grad program | F-1 | HIGH (if enrolled) | ~$29K + tuition |
@@ -800,7 +800,7 @@ Entrepreneurship is viable for Australians through E-2, but the capital requirem
 ### Next steps:
 1. Research CBEST and CSET registration — she could take these exams soon.
 2. Contact Berkeley Unified School District about science teaching vacancies and visa sponsorship.
-3. Look into Teach for America application timeline (applications typically open in late summer).
+3. Look into [Teach for America](https://www.teachforamerica.org) application timeline (applications typically open in late summer).
 4. Contact SF Teacher Residency and Oakland Teaching Fellows about eligibility.
 
 ---
@@ -816,7 +816,7 @@ Large nonprofits with the resources and willingness to sponsor visas:
 | **World Wildlife Fund** | DC (but remote roles) | Conservation, communications | H-1B/J-1 |
 | **The Nature Conservancy** | SF office | Science, communications, marketing | H-1B |
 | **Environmental Defense Fund** | SF office | Science, policy, communications | H-1B |
-| **Khan Academy** | Mountain View | Education, content, biology curriculum | H-1B |
+| **[Khan Academy](https://www.khanacademy.org)** | Mountain View | Education, content, biology curriculum | H-1B |
 | **Gates Foundation** | Seattle (remote possible) | Global health, education | H-1B |
 | **UCSF (Benioff Children's Hospital)** | SF | Health education, research, community outreach | H-1B/J-1 |
 | **Sierra Club** | Oakland | Marketing, communications, organizing | Varies |
@@ -825,9 +825,9 @@ Large nonprofits with the resources and willingness to sponsor visas:
 ### B. J-1 Trainee/Intern Programs Through Nonprofits
 
 Several organizations facilitate J-1 trainee programs:
-- **Cultural Vistas:** Places international professionals in US organizations for training (12-18 months).
+- **[Cultural Vistas](https://culturalvistas.org):** Places international professionals in US organizations for training (12-18 months).
 - **Alliance Abroad:** J-1 training programs.
-- **CIEE (Council on International Educational Exchange):** J-1 placement.
+- **[CIEE](https://www.ciee.org) (Council on International Educational Exchange):** J-1 placement.
 
 These require a host organization willing to provide structured training. The J-1 trainee category is for recent graduates with a degree in their field.
 
@@ -857,7 +857,7 @@ These require a host organization willing to provide structured training. The J-
 - Health education and science education nonprofits are the best fit.
 
 ### Next steps:
-1. Search Idealist.org for nonprofit roles in biology, health education, science education in the Bay Area.
+1. Search [Idealist.org](https://www.idealist.org) for nonprofit roles in biology, health education, science education in the Bay Area.
 2. Look at Public Health Institute and Hesperian Health Guides specifically.
 3. Target marketing/communications roles at environmental and health nonprofits.
 
@@ -874,7 +874,7 @@ These require a host organization willing to provide structured training. The J-
 ### B. Australian-American Fulbright Commission
 - See Fellowships section above.
 - Specific programs for Australians: Postgraduate, Professional, Senior Scholar.
-- Website: fulbright.org.au
+- Website: [fulbright.org.au](https://www.fulbright.org.au)
 - Application: ~July 2026 for 2027-2028 placements.
 
 ### C. Advance.org — Global Australian Network
@@ -898,7 +898,7 @@ These require a host organization willing to provide structured training. The J-
 - Career transition support for Australian athletes.
 - Free counseling, skills assessment, career planning.
 - She should register even while in the US.
-- Website: ais.gov.au
+- Website: [ais.gov.au](https://www.ais.gov.au)
 
 #### Department of Foreign Affairs and Trade (DFAT) Programs
 - Australia-US bilateral programs occasionally offer fellowships or exchanges.
@@ -949,16 +949,16 @@ The E-3 visa is the primary Australian advantage. Beyond that, Fulbright (Austra
 1. Contact UC Berkeley ISSO about OPT eligibility for her certificate program
 2. Join Advance.org (free Australian professional network)
 3. Register for Game Plan through the Australian Institute of Sport
-4. Set up job alerts on jobs.berkeley.edu (UC staff positions)
-5. Set up job alerts on Idealist.org, BioSpace, LinkedIn
+4. Set up job alerts on [jobs.berkeley.edu](https://jobs.berkeley.edu) (UC staff positions)
+5. Set up job alerts on [Idealist.org](https://www.idealist.org), [BioSpace](https://www.biospace.com), LinkedIn
 6. Talk to her track coaches about GA coaching opportunities and remaining NCAA eligibility
 
 **This month:**
 7. Apply to USF MA in Sport Management (rolling admissions — could start Fall 2026)
 8. Apply to SFSU and CSUEB graduate programs if Fall 2026 deadlines are still open
 9. Contact Berkeley City College about F-1 transfer process (backup plan)
-10. Reach out to FCA (Fellowship of Christian Athletes) about staff positions
-11. Contact local campus ministries (InterVarsity, Cru) about openings
+10. Reach out to [FCA (Fellowship of Christian Athletes)](https://www.fca.org) about staff positions
+11. Contact local campus ministries ([InterVarsity](https://intervarsity.org), Cru) about openings
 12. Research CBEST/CSET exam dates (for teaching pathway)
 13. Begin networking with Cal Athletics staff about job opportunities
 14. Contact the Australian Consulate in SF about any programs or resources
@@ -1013,7 +1013,7 @@ The E-3 visa is the primary Australian advantage. Beyond that, Fulbright (Austra
 | **GA coaching** | Yes (if at Cal) | $0 (stipend + tuition) | Talk to coaches NOW | MOD-HIGH | ~$15-25K + tuition |
 | **Research assistant** | Yes | $0 | Ongoing | MOD-HIGH | $45-60K |
 | **Teaching (emergency cred)** | Yes | ~$300 for exams | 2-3 months | MOD-HIGH | $55-75K |
-| **Teach for America** | Maybe Bay Area | $0 | Apply summer | MOD (needs work auth) | ~$50-60K |
+| **[Teach for America](https://www.teachforamerica.org)** | Maybe Bay Area | $0 | Apply summer | MOD (needs work auth) | ~$50-60K |
 | **R-1 religious worker** | Yes (if local org) | ~$2-5K legal | 2-3 months | MOD | $25-45K |
 | **FCA staff** | Yes (if Cal chapter) | $0 | Contact NOW | MOD | $30-45K (donor-supported) |
 | **Fulbright** | Yes (if Cal program) | $0 (funded) | Apply July 2026 | MOD | Full stipend |
@@ -1032,7 +1032,7 @@ The E-3 visa is the primary Australian advantage. Beyond that, Fulbright (Austra
 1. **Contact ISSO about OPT** — This determines her entire timeline. Do it TODAY.
 2. **Apply to USF Sport Management MA** — Rolling admissions. Could start Fall 2026. Perfect fit for her background. Maintains F-1 status.
 3. **Network with Cal Athletics staff** — She has direct access as a current athlete. Ask about jobs, GA positions, and internal referrals.
-4. **Contact FCA (Fellowship of Christian Athletes)** — Her unique combination of D1 athletics + Christian faith makes her ideal for FCA. Could lead to R-1 visa.
+4. **Contact [FCA (Fellowship of Christian Athletes)](https://www.fca.org)** — Her unique combination of D1 athletics + Christian faith makes her ideal for FCA. Could lead to R-1 visa.
 5. **Start E-3 job search NOW** — Every day matters. Set up alerts, network, apply. Emphasize E-3 is cheap and easy for employers.
 
 ---
