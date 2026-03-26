@@ -295,6 +295,84 @@ const HTML_PAGE = `<!DOCTYPE html>
 
     .banner strong { color: #92400e; }
 
+    /* Next steps dropdown */
+    .next-steps {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+
+    .next-steps summary {
+      padding: 0.9rem 1.25rem;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.95rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      user-select: none;
+    }
+
+    .next-steps summary::-webkit-details-marker { display: none; }
+
+    .next-steps summary::before {
+      content: '\\25B6';
+      font-size: 0.7rem;
+      transition: transform 0.2s;
+      color: var(--accent);
+    }
+
+    .next-steps[open] summary::before { transform: rotate(90deg); }
+
+    .next-steps-content {
+      padding: 0 1.25rem 1rem;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--bg);
+      font-size: 0.85rem;
+      align-items: flex-start;
+    }
+
+    .step-item:last-child { border-bottom: none; }
+
+    .step-urgency {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 9999px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .urgency-now {
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+    }
+
+    .urgency-soon {
+      background: #fff7ed;
+      color: #ea580c;
+      border: 1px solid #fed7aa;
+    }
+
+    .urgency-ongoing {
+      background: #eff6ff;
+      color: #2563eb;
+      border: 1px solid #bfdbfe;
+    }
+
+    .step-text strong { font-weight: 600; }
+    .step-detail { color: var(--text-secondary); }
+
     /* Loading */
     .loading {
       text-align: center;
@@ -323,6 +401,44 @@ const HTML_PAGE = `<!DOCTYPE html>
       Contact <strong>UC Berkeley ISSO</strong> this week to check OPT eligibility.
       Best visa option: <strong>E-3</strong> (Australian-exclusive, no lottery).
     </div>
+
+    <details class="next-steps" open>
+      <summary>Immediate Next Steps</summary>
+      <div class="next-steps-content">
+        <div class="step-item">
+          <span class="step-urgency urgency-now">THIS WEEK</span>
+          <div class="step-text"><strong>Contact UC Berkeley ISSO</strong> &mdash; Ask if your marketing certificate qualifies for OPT. This determines your entire timeline. <span class="step-detail">Visit internationaloffice.berkeley.edu or walk in.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-now">THIS WEEK</span>
+          <div class="step-text"><strong>Apply to summer camps</strong> &mdash; Galileo Camps, iD Tech, and Lawrence Hall of Science are hiring now for summer 2026. <span class="step-detail">These are immediate income + keeps you in Berkeley.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-soon">NEXT 2 WKS</span>
+          <div class="step-text"><strong>Talk to your coaches</strong> &mdash; Ask about graduate assistant coaching positions at Cal. Combines grad school (extends F-1) with paid coaching. <span class="step-detail">Your coaches can connect you to the right people.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-soon">NEXT 2 WKS</span>
+          <div class="step-text"><strong>Apply to Lawrence Hall of Science</strong> &mdash; Science education roles + summer camp positions right on Berkeley campus. <span class="step-detail">Best fit for biology + teaching + people skills.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-soon">NEXT 2 WKS</span>
+          <div class="step-text"><strong>Look into USF Sport Management MA</strong> &mdash; Rolling admissions for Fall 2026. Combines D1 athletics + marketing. Maintains F-1. <span class="step-detail">30 min from Berkeley. Backup plan if jobs take time.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-soon">NEXT 2 WKS</span>
+          <div class="step-text"><strong>Reach out to FCA (Fellowship of Christian Athletes)</strong> &mdash; D1 athlete + Christian faith = perfect fit. They hire campus staff and may sponsor R-1 visa. <span class="step-detail">fcaaustin.org or search FCA Bay Area.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-ongoing">ONGOING</span>
+          <div class="step-text"><strong>Set up LinkedIn job alerts</strong> &mdash; "biotech marketing Bay Area", "science education Berkeley", "marketing coordinator biotech". <span class="step-detail">Check the Resources tab for full list of job boards.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-ongoing">ONGOING</span>
+          <div class="step-text"><strong>When applying: lead with E-3 visa</strong> &mdash; Tell employers you're Australian and eligible for the E-3 visa. It's faster, cheaper, and easier than H-1B with no lottery. <span class="step-detail">Most employers don't know about it &mdash; educate them.</span></div>
+        </div>
+      </div>
+    </details>
 
     <div class="tabs" id="tabs"></div>
     <p class="section-desc" id="section-desc"></p>
@@ -422,6 +538,11 @@ const HTML_PAGE = `<!DOCTYPE html>
 </body>
 </html>`;
 
-app.listen(PORT, () => {
-  console.log('Zahra Career Hub running at http://localhost:' + PORT);
-});
+// Export for Vercel serverless. Also listen locally for dev.
+module.exports = app;
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log('Zahra Career Hub running at http://localhost:' + PORT);
+  });
+}
