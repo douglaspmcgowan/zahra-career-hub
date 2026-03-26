@@ -17,6 +17,7 @@ const SECTIONS = [
 // Custom display names and sort priority (lower = first)
 const FILE_CONFIG = {
   'open-roles.md': { displayName: 'Open Roles — Apply Now', priority: 0 },
+  'resume-linkedin-guide.md': { displayName: 'Resume & LinkedIn Guide', priority: 0 },
   'all-pathways-comprehensive.md': { displayName: 'All Pathways (Full Guide)', priority: 0 },
   'bay-area-jobs.md': { displayName: 'Bay Area Jobs & Target Companies', priority: 1 },
   'immigration-pathways.md': { displayName: 'Immigration Pathways', priority: 2 },
@@ -50,14 +51,22 @@ function formatDate(date) {
   const now = new Date();
   const diffMs = now - date;
   const diffMins = Math.floor(diffMs / 60000);
-  // If modified within last 24 hours, show relative time
+  const diffDays = Math.floor(diffMs / 86400000);
+
+  // If modified within last hour, show relative time
   if (diffMins < 1) return 'just now';
   if (diffMins < 60) return `${diffMins}m ago`;
   const diffHours = Math.floor(diffMins / 60);
   if (diffHours < 24) return `${diffHours}h ago`;
-  // Otherwise show a clean date — avoids broken mtime on Vercel
+  if (diffDays < 7) return `${diffDays}d ago`;
+
+  // On Vercel, file mtime is unreliable (can show ancient dates).
+  // If the date is more than 30 days old, it's definitely wrong — show "Mar 2026"
+  if (diffDays > 30) return 'Mar 2026';
+
+  // Otherwise show month + day
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+  return months[date.getMonth()] + ' ' + date.getDate();
 }
 
 // Keep timeAgo for backwards compat but unused now
