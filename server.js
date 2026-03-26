@@ -173,6 +173,9 @@ const HTML_PAGE = `<!DOCTYPE html>
     [data-theme="dark"] .md-content th { background: #333; }
     [data-theme="dark"] .md-content tr:hover td { background: #333; }
     [data-theme="dark"] .file-modified { background: #333; }
+    [data-theme="dark"] .tab { background: var(--card); color: var(--text); border-color: var(--border); }
+    [data-theme="dark"] .tab:hover { border-color: var(--accent); color: var(--accent); }
+    [data-theme="dark"] .tab.active { background: var(--accent); color: white; border-color: var(--accent); }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
