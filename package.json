@@ -12,6 +12,6 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1",
-    "marked": "^17.0.5"
+    "marked": "^9.1.6"
   }
 }
