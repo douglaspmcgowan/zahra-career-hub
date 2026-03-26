@@ -559,8 +559,8 @@ const HTML_PAGE = `<!DOCTYPE html>
         }
       });
 
-      // Scroll to top when opening a file
-      document.getElementById('content-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Scroll so the tabs + content title are visible (not hidden behind sticky header)
+      document.getElementById('tabs').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     document.getElementById('back-btn').onclick = renderFiles;
