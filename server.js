@@ -136,6 +136,10 @@ const HTML_PAGE = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zahra's Career Hub</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -178,11 +182,74 @@ const HTML_PAGE = `<!DOCTYPE html>
     [data-theme="dark"] .tab.active { background: var(--accent); color: white; border-color: var(--accent); }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
     }
+
+    /* Page transitions */
+    .fade-in { animation: fadeIn 0.25s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Search bar */
+    .search-wrap {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.7rem 1rem 0.7rem 2.5rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.85rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      pointer-events: none;
+    }
+
+    .search-results {
+      margin-top: 0.75rem;
+    }
+
+    .search-result-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .search-result-item:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+    }
+
+    .search-result-title { font-weight: 600; font-size: 0.85rem; }
+    .search-result-context { font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.2rem; }
+    .search-result-context mark { background: #fef08a; color: #1c1917; border-radius: 2px; padding: 0 2px; }
+    [data-theme="dark"] .search-result-context mark { background: #854d0e; color: #fef08a; }
 
     header {
       background: white;
@@ -277,7 +344,7 @@ const HTML_PAGE = `<!DOCTYPE html>
       border-radius: 12px;
       padding: 1rem 1.25rem;
       cursor: pointer;
-      transition: all 0.15s;
+      transition: all 0.2s;
     }
 
     .file-card:hover {
@@ -585,6 +652,13 @@ const HTML_PAGE = `<!DOCTYPE html>
       </div>
     </details>
 
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input class="search-input" id="search-input" type="text" placeholder="Search across all files..." />
+    </div>
+    <div class="search-results" id="search-results" style="display:none;"></div>
+
+    <div id="main-content">
     <div class="tabs" id="tabs"></div>
     <p class="section-desc" id="section-desc"></p>
     <div class="file-list" id="file-list"></div>
@@ -592,17 +666,21 @@ const HTML_PAGE = `<!DOCTYPE html>
       <div class="content-back" id="back-btn">&larr; Back to files</div>
       <div class="md-content" id="md-content"></div>
     </div>
+    </div><!-- /main-content -->
   </div>
 
   <script>
     let sections = [];
     let activeSection = 0;
+    let allFilesCache = {}; // cache raw file content for search
 
     async function load() {
       const res = await fetch('/api/sections');
       sections = await res.json();
       renderTabs();
       renderFiles();
+      // Preload all file content for search
+      preloadFiles();
     }
 
     function renderTabs() {
@@ -620,6 +698,7 @@ const HTML_PAGE = `<!DOCTYPE html>
       const el = document.getElementById('file-list');
       document.getElementById('content-area').classList.remove('visible');
       document.getElementById('file-list').style.display = '';
+      el.classList.add('fade-in');
 
       if (!s || !s.files.length) {
         el.innerHTML = '<div class="loading">No files yet. Check back after the next job scan!</div>';
@@ -653,8 +732,12 @@ const HTML_PAGE = `<!DOCTYPE html>
       const res = await fetch('/api/file/' + dir + '/' + filename);
       const data = await res.json();
       document.getElementById('file-list').style.display = 'none';
+      document.getElementById('search-results').style.display = 'none';
+      document.getElementById('main-content').style.display = '';
       document.getElementById('md-content').innerHTML = data.html;
-      document.getElementById('content-area').classList.add('visible');
+      var ca = document.getElementById('content-area');
+      ca.classList.add('visible');
+      ca.classList.add('fade-in');
 
       // Handle links: anchor links scroll in-page, external links open in new tab
       document.querySelectorAll('.md-content a').forEach(a => {
@@ -684,6 +767,80 @@ const HTML_PAGE = `<!DOCTYPE html>
 
     // Auto-refresh every 5 minutes
     setInterval(load, 5 * 60 * 1000);
+
+    // Search functionality
+    async function preloadFiles() {
+      for (var s of sections) {
+        for (var f of s.files) {
+          try {
+            var res = await fetch('/api/file/' + f.dir + '/' + f.filename);
+            var data = await res.json();
+            allFilesCache[f.dir + '/' + f.filename] = { raw: data.raw, name: f.name, dir: f.dir, filename: f.filename };
+          } catch(e) {}
+        }
+      }
+    }
+
+    var searchTimeout;
+    document.getElementById('search-input').addEventListener('input', function(e) {
+      clearTimeout(searchTimeout);
+      var q = e.target.value.trim();
+      if (!q || q.length < 2) {
+        document.getElementById('search-results').style.display = 'none';
+        document.getElementById('main-content').style.display = '';
+        return;
+      }
+      searchTimeout = setTimeout(function() { doSearch(q); }, 200);
+    });
+
+    function doSearch(query) {
+      var results = [];
+      var ql = query.toLowerCase();
+      var keys = Object.keys(allFilesCache);
+      for (var i = 0; i < keys.length; i++) {
+        var file = allFilesCache[keys[i]];
+        var lines = file.raw.split('\\n');
+        for (var j = 0; j < lines.length; j++) {
+          if (lines[j].toLowerCase().indexOf(ql) !== -1) {
+            results.push({ name: file.name, dir: file.dir, filename: file.filename, line: lines[j], lineNum: j });
+            break; // one result per file
+          }
+        }
+      }
+
+      var el = document.getElementById('search-results');
+      var mainEl = document.getElementById('main-content');
+
+      if (results.length === 0) {
+        el.innerHTML = '<div class="loading">No results for "' + query + '"</div>';
+        el.style.display = '';
+        mainEl.style.display = 'none';
+        return;
+      }
+
+      el.innerHTML = results.map(function(r) {
+        var ctx = r.line.trim().substring(0, 150).replace(/</g, '&lt;');
+        var escaped = query.replace(/[-\\/\\\\^$*+?.()|[\\]{}]/g, '\\\\$&');
+        try { ctx = ctx.replace(new RegExp('(' + escaped + ')', 'gi'), '<mark>$1</mark>'); } catch(e) {}
+        return '<div class="search-result-item" data-dir="' + r.dir + '" data-file="' + r.filename + '">' +
+          '<div class="search-result-title">' + r.name + '</div>' +
+          '<div class="search-result-context">' + ctx + '</div>' +
+        '</div>';
+      }).join('');
+
+      el.style.display = '';
+      el.classList.add('fade-in');
+      mainEl.style.display = 'none';
+
+      el.querySelectorAll('.search-result-item').forEach(function(item) {
+        item.addEventListener('click', function() {
+          document.getElementById('search-input').value = '';
+          el.style.display = 'none';
+          mainEl.style.display = '';
+          openFile(item.dataset.dir, item.dataset.file);
+        });
+      });
+    }
 
     // Dark mode toggle — persists in localStorage
     function toggleDark() {
