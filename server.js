@@ -14,17 +14,19 @@ const SECTIONS = [
   { id: 'profile', label: 'Your Profile', dir: 'profile', icon: '👤', description: 'Resume and background info' },
 ];
 
-// Custom display names and sort priority (lower = first)
+// Custom display names, sort priority, and last-updated dates.
+// UPDATE the date here whenever you edit a file and push.
 const FILE_CONFIG = {
-  'open-roles.md': { displayName: 'Open Roles — Apply Now', priority: 0 },
-  'resume-linkedin-guide.md': { displayName: 'Resume & LinkedIn Guide', priority: 0 },
-  'all-pathways-comprehensive.md': { displayName: 'All Pathways (Full Guide)', priority: 0 },
-  'bay-area-jobs.md': { displayName: 'Bay Area Jobs & Target Companies', priority: 1 },
-  'immigration-pathways.md': { displayName: 'Immigration Pathways', priority: 2 },
-  'international-resources.md': { displayName: 'International Resources', priority: 3 },
-  'job-search-queries.md': { displayName: 'Job Search Queries', priority: 5 },
-  'latest-jobs.md': { displayName: 'Latest Job Scan', priority: 0 },
-  'zahra-profile.md': { displayName: 'Your Profile', priority: 0 },
+  'open-roles.md': { displayName: 'Open Roles — Apply Now', priority: 0, date: 'Mar 25, 2026' },
+  'resume-linkedin-guide.md': { displayName: 'Resume & LinkedIn Guide', priority: 0, date: 'Mar 25, 2026' },
+  'all-pathways-comprehensive.md': { displayName: 'All Pathways (Full Guide)', priority: 0, date: 'Mar 25, 2026' },
+  'bay-area-jobs.md': { displayName: 'Bay Area Jobs & Target Companies', priority: 1, date: 'Mar 25, 2026' },
+  'immigration-pathways.md': { displayName: 'Immigration Pathways', priority: 2, date: 'Mar 25, 2026' },
+  'international-resources.md': { displayName: 'International Resources', priority: 3, date: 'Mar 25, 2026' },
+  'job-search-queries.md': { displayName: 'Job Search Queries', priority: 5, date: 'Mar 25, 2026' },
+  'latest-jobs.md': { displayName: 'Latest Job Scan', priority: 0, date: 'Mar 25, 2026' },
+  'zahra-profile.md': { displayName: 'Your Profile', priority: 0, date: 'Mar 25, 2026' },
+  'history.md': { displayName: 'Scan History', priority: 10, date: 'Mar 25, 2026' },
 };
 
 function getMarkdownFiles(dir) {
@@ -41,7 +43,7 @@ function getMarkdownFiles(dir) {
         filename: f,
         dir,
         priority: config.priority !== undefined ? config.priority : 10,
-        modifiedAgo: formatDate(fs.statSync(filePath).mtime),
+        modifiedAgo: config.date || 'Mar 2026',
       };
     })
     .sort((a, b) => a.priority - b.priority);
