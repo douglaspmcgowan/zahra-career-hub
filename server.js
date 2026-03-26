@@ -51,9 +51,14 @@ function slugify(text) {
 
 function renderMarkdown(content) {
   const renderer = new marked.Renderer();
-  renderer.heading = function({ text, depth }) {
+  // marked v9: heading(text, level, raw)
+  renderer.heading = function(text, level) {
     const slug = slugify(text);
-    return `<h${depth} id="${slug}">${text}</h${depth}>`;
+    return `<h${level} id="${slug}">${text}</h${level}>`;
+  };
+  // marked v9: table(header, body)
+  renderer.table = function(header, body) {
+    return `<div class="table-wrap"><table><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
   };
   return marked(content, { breaks: true, gfm: true, renderer });
 }
@@ -381,11 +386,34 @@ const HTML_PAGE = `<!DOCTYPE html>
       font-size: 0.9rem;
     }
 
+    /* Tables: always scrollable on all screens */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1rem 0;
+    }
+
+    .md-content table { min-width: 500px; }
+
     @media (max-width: 600px) {
-      .container { padding: 1rem; }
-      .content-area { padding: 1.25rem; }
+      .container { padding: 0.75rem; }
+      .content-area { padding: 1rem; }
       .md-content table { font-size: 0.78rem; }
       .md-content th, .md-content td { padding: 0.4rem 0.5rem; }
+
+      header { padding: 1rem; }
+      header h1 { font-size: 1.1rem; }
+
+      .banner { font-size: 0.8rem; padding: 0.75rem 1rem; }
+
+      .next-steps summary { font-size: 0.9rem; padding: 0.75rem 1rem; }
+      .step-item { font-size: 0.82rem; }
+      .step-urgency { font-size: 0.65rem; }
+
+      .file-card { padding: 0.85rem 1rem; }
+      .file-name { font-size: 0.9rem; }
+
+      .tab { padding: 0.5rem 0.85rem; font-size: 0.8rem; }
     }
   </style>
 </head>
@@ -482,13 +510,20 @@ const HTML_PAGE = `<!DOCTYPE html>
       }
 
       el.innerHTML = s.files.map(f =>
-        '<div class="file-card" onclick="openFile(\\'' + f.dir + '\\', \\'' + f.filename + '\\')">' +
+        '<div class="file-card" data-dir="' + f.dir + '" data-file="' + f.filename + '">' +
           '<div class="file-card-header">' +
             '<span class="file-name">' + f.name + '</span>' +
             '<span class="file-modified">' + f.modifiedAgo + '</span>' +
           '</div>' +
         '</div>'
       ).join('');
+
+      // Attach click handlers via event delegation (works on mobile)
+      el.querySelectorAll('.file-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+          openFile(card.dataset.dir, card.dataset.file);
+        });
+      });
     }
 
     function switchTab(i) {
