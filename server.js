@@ -6,13 +6,25 @@ const { marked } = require('marked');
 const app = express();
 const PORT = 3456;
 
-// Base directories to scan for markdown files
+// Base directories to scan for markdown files — Strategy first per user request
 const SECTIONS = [
-  { id: 'updates', label: 'Job Updates', dir: 'updates', icon: '📋', description: 'Latest job listings found for you' },
+  { id: 'strategy', label: 'Strategy', dir: 'strategy', icon: '🎯', description: 'Open roles, search terms, and career planning' },
   { id: 'resources', label: 'Resources', dir: 'resources', icon: '📚', description: 'Immigration, jobs, and support organizations' },
-  { id: 'strategy', label: 'Strategy', dir: 'strategy', icon: '🎯', description: 'Search terms and career planning' },
+  { id: 'updates', label: 'Job Updates', dir: 'updates', icon: '📋', description: 'Latest job listings found for you' },
   { id: 'profile', label: 'Your Profile', dir: 'profile', icon: '👤', description: 'Resume and background info' },
 ];
+
+// Custom display names and sort priority (lower = first)
+const FILE_CONFIG = {
+  'open-roles.md': { displayName: 'Open Roles — Apply Now', priority: 0 },
+  'all-pathways-comprehensive.md': { displayName: 'All Pathways (Full Guide)', priority: 0 },
+  'bay-area-jobs.md': { displayName: 'Bay Area Jobs & Target Companies', priority: 1 },
+  'immigration-pathways.md': { displayName: 'Immigration Pathways', priority: 2 },
+  'international-resources.md': { displayName: 'International Resources', priority: 3 },
+  'job-search-queries.md': { displayName: 'Job Search Queries', priority: 5 },
+  'latest-jobs.md': { displayName: 'Latest Job Scan', priority: 0 },
+  'zahra-profile.md': { displayName: 'Your Profile', priority: 0 },
+};
 
 function getMarkdownFiles(dir) {
   const fullDir = path.join(__dirname, dir);
@@ -21,18 +33,34 @@ function getMarkdownFiles(dir) {
     .filter(f => f.endsWith('.md'))
     .map(f => {
       const filePath = path.join(fullDir, f);
-      const stat = fs.statSync(filePath);
+      const config = FILE_CONFIG[f] || {};
+      const defaultName = f.replace('.md', '').replace(/-/g, ' ');
       return {
-        name: f.replace('.md', '').replace(/-/g, ' '),
+        name: config.displayName || defaultName,
         filename: f,
         dir,
-        modified: stat.mtime,
-        modifiedAgo: timeAgo(stat.mtime),
+        priority: config.priority !== undefined ? config.priority : 10,
+        modifiedAgo: formatDate(fs.statSync(filePath).mtime),
       };
     })
-    .sort((a, b) => b.modified - a.modified);
+    .sort((a, b) => a.priority - b.priority);
 }
 
+function formatDate(date) {
+  const now = new Date();
+  const diffMs = now - date;
+  const diffMins = Math.floor(diffMs / 60000);
+  // If modified within last 24 hours, show relative time
+  if (diffMins < 1) return 'just now';
+  if (diffMins < 60) return `${diffMins}m ago`;
+  const diffHours = Math.floor(diffMins / 60);
+  if (diffHours < 24) return `${diffHours}h ago`;
+  // Otherwise show a clean date — avoids broken mtime on Vercel
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+}
+
+// Keep timeAgo for backwards compat but unused now
 function timeAgo(date) {
   const seconds = Math.floor((new Date() - date) / 1000);
   if (seconds < 60) return 'just now';
