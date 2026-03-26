@@ -151,6 +151,29 @@ const HTML_PAGE = `<!DOCTYPE html>
       --summer: #059669;
     }
 
+    [data-theme="dark"] {
+      --bg: #1a1a1a;
+      --card: #262626;
+      --text: #e5e5e5;
+      --text-secondary: #a3a3a3;
+      --accent: #60a5fa;
+      --accent-light: #1e3a5f;
+      --border: #404040;
+      --hot: #f87171;
+      --summer: #34d399;
+    }
+
+    [data-theme="dark"] header { background: #1f1f1f; }
+    [data-theme="dark"] .banner { background: linear-gradient(135deg, #422006, #451a03); border-color: #92400e; }
+    [data-theme="dark"] .banner strong { color: #fbbf24; }
+    [data-theme="dark"] .next-steps { background: var(--card); }
+    [data-theme="dark"] .urgency-now { background: #450a0a; color: #fca5a5; border-color: #7f1d1d; }
+    [data-theme="dark"] .urgency-soon { background: #431407; color: #fdba74; border-color: #7c2d12; }
+    [data-theme="dark"] .urgency-ongoing { background: #172554; color: #93c5fd; border-color: #1e3a5f; }
+    [data-theme="dark"] .md-content th { background: #333; }
+    [data-theme="dark"] .md-content tr:hover td { background: #333; }
+    [data-theme="dark"] .file-modified { background: #333; }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
       background: var(--bg);
@@ -165,7 +188,27 @@ const HTML_PAGE = `<!DOCTYPE html>
       position: sticky;
       top: 0;
       z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
+    .dark-toggle {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .dark-toggle:hover { border-color: var(--accent); }
 
     header h1 {
       font-size: 1.25rem;
@@ -459,8 +502,11 @@ const HTML_PAGE = `<!DOCTYPE html>
 </head>
 <body>
   <header>
-    <h1>Zahra's Career Hub</h1>
-    <p>Job updates, immigration pathways, resources &mdash; all in one place</p>
+    <div>
+      <h1>Zahra's Career Hub</h1>
+      <p>Job updates, immigration pathways, resources &mdash; all in one place</p>
+    </div>
+    <button class="dark-toggle" onclick="toggleDark()" title="Toggle dark mode">&#9790;</button>
   </header>
 
   <div class="container">
@@ -469,6 +515,34 @@ const HTML_PAGE = `<!DOCTYPE html>
       Contact <strong>UC Berkeley ISSO</strong> this week to check OPT eligibility.
       Best visa option: <strong>E-3</strong> (Australian-exclusive, no lottery).
     </div>
+
+    <details class="next-steps">
+      <summary>Why E-3 Visa is Your Best Option</summary>
+      <div class="next-steps-content" style="font-size: 0.85rem;">
+        <p>The <strong>E-3 visa</strong> is exclusively for Australians and is basically a cheat code:</p>
+        <div class="step-item">
+          <span class="step-urgency urgency-now" style="font-size:0.6rem;">KEY</span>
+          <div class="step-text"><strong>No lottery.</strong> H-1B has a ~25% selection rate. E-3 has ~10,500 slots/year and they're never all used. <span class="step-detail">If you qualify, you get it.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-now" style="font-size:0.6rem;">KEY</span>
+          <div class="step-text"><strong>Cheap and easy for employers.</strong> H-1B costs $5-10K+ in legal fees. E-3 just needs one form. <span class="step-detail">This removes the #1 reason employers say no.</span></div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-ongoing" style="font-size:0.6rem;">KEY</span>
+          <div class="step-text"><strong>Fast.</strong> Processed in weeks, not months. No waiting for October start date like H-1B.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-ongoing" style="font-size:0.6rem;">KEY</span>
+          <div class="step-text"><strong>Renewable forever.</strong> 2-year terms, no lifetime cap. Stay as long as you have a job.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-urgency urgency-soon" style="font-size:0.6rem;">KEY</span>
+          <div class="step-text"><strong>Your biology degree qualifies you.</strong> The job needs to require a bachelor's. Biotech marketing, science education, health comms &mdash; all qualify.</div>
+        </div>
+        <p style="margin-top:0.75rem;"><strong>What to tell employers:</strong> <em>"I'm Australian and eligible for the E-3 visa &mdash; it's faster, cheaper, and simpler than H-1B, with no lottery. You just file one form."</em></p>
+      </div>
+    </details>
 
     <details class="next-steps" open>
       <summary>Immediate Next Steps</summary>
@@ -607,6 +681,24 @@ const HTML_PAGE = `<!DOCTYPE html>
 
     // Auto-refresh every 5 minutes
     setInterval(load, 5 * 60 * 1000);
+
+    // Dark mode toggle — persists in localStorage
+    function toggleDark() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+      document.querySelector('.dark-toggle').innerHTML = isDark ? '&#9790;' : '&#9788;';
+    }
+
+    // Restore saved theme
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.querySelector('.dark-toggle').innerHTML = '&#9788;';
+      }
+    })();
 
     load();
   </script>
