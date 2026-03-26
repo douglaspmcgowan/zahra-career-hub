@@ -251,6 +251,7 @@ const HTML_PAGE = `<!DOCTYPE html>
     .content-back:hover { text-decoration: underline; }
 
     /* Markdown content styling */
+    .md-content h1, .md-content h2, .md-content h3, .md-content h4 { scroll-margin-top: 7rem; }
     .md-content h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em; }
     .md-content h2 { font-size: 1.15rem; font-weight: 700; margin: 1.75rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
     .md-content h3 { font-size: 1rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
