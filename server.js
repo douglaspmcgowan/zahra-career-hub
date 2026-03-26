@@ -85,7 +85,15 @@ function timeAgo(date) {
 }
 
 function slugify(text) {
-  return text.toLowerCase().replace(/<[^>]*>/g, '').replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').trim();
+  return text
+    .toLowerCase()
+    .replace(/<[^>]*>/g, '')    // strip HTML tags
+    .replace(/&amp;/g, '')      // strip &amp; (marked encodes & as &amp;)
+    .replace(/&/g, '')          // strip raw &
+    .replace(/[^\w\s-]/g, '')   // strip other special chars
+    .replace(/\s+/g, '-')       // spaces to dashes
+    .replace(/-{2,}/g, '--')    // preserve double dashes (TOC convention)
+    .trim();
 }
 
 function renderMarkdown(content) {
@@ -748,7 +756,9 @@ const HTML_PAGE = `<!DOCTYPE html>
           a.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = href.slice(1);
-            const targetEl = document.getElementById(targetId);
+            // Try exact match first, then try collapsing double dashes to single
+            var targetEl = document.getElementById(targetId)
+              || document.getElementById(targetId.replace(/--/g, '-'));
             if (targetEl) {
               targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
