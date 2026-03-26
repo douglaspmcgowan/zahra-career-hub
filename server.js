@@ -288,6 +288,37 @@ const HTML_PAGE = `<!DOCTYPE html>
 
     .dark-toggle:hover { border-color: var(--accent); }
 
+    .scroll-top {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s, transform 0.25s;
+      transform: translateY(10px);
+      z-index: 200;
+    }
+
+    .scroll-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .scroll-top:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+
     header h1 {
       font-size: 1.25rem;
       font-weight: 700;
@@ -677,6 +708,8 @@ const HTML_PAGE = `<!DOCTYPE html>
     </div><!-- /main-content -->
   </div>
 
+  <button class="scroll-top" id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">&uarr;</button>
+
   <script>
     let sections = [];
     let activeSection = 0;
@@ -860,6 +893,13 @@ const HTML_PAGE = `<!DOCTYPE html>
       localStorage.setItem('theme', isDark ? 'light' : 'dark');
       document.querySelector('.dark-toggle').innerHTML = isDark ? '&#9790;' : '&#9788;';
     }
+
+    // Scroll-to-top button visibility
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('scroll-top');
+      if (window.scrollY > 400) { btn.classList.add('visible'); }
+      else { btn.classList.remove('visible'); }
+    });
 
     // Restore saved theme
     (function() {
