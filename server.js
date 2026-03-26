@@ -45,8 +45,17 @@ function timeAgo(date) {
   return `${days}d ago`;
 }
 
+function slugify(text) {
+  return text.toLowerCase().replace(/<[^>]*>/g, '').replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').trim();
+}
+
 function renderMarkdown(content) {
-  return marked(content, { breaks: true, gfm: true });
+  const renderer = new marked.Renderer();
+  renderer.heading = function({ text, depth }) {
+    const slug = slugify(text);
+    return `<h${depth} id="${slug}">${text}</h${depth}>`;
+  };
+  return marked(content, { breaks: true, gfm: true, renderer });
 }
 
 // API: list all sections and files
@@ -379,11 +388,28 @@ const HTML_PAGE = `<!DOCTYPE html>
       document.getElementById('md-content').innerHTML = data.html;
       document.getElementById('content-area').classList.add('visible');
 
-      // Make all links open in new tab
+      // Handle links: anchor links scroll in-page, external links open in new tab
       document.querySelectorAll('.md-content a').forEach(a => {
-        a.setAttribute('target', '_blank');
-        a.setAttribute('rel', 'noopener');
+        const href = a.getAttribute('href') || '';
+        if (href.startsWith('#')) {
+          // Anchor link — scroll to the element
+          a.removeAttribute('target');
+          a.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = href.slice(1);
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+              targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        } else {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener');
+        }
       });
+
+      // Scroll to top when opening a file
+      document.getElementById('content-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     document.getElementById('back-btn').onclick = renderFiles;
