@@ -17,16 +17,23 @@ const SECTIONS = [
 // Custom display names, sort priority, and last-updated dates.
 // UPDATE the date here whenever you edit a file and push.
 const FILE_CONFIG = {
-  'open-roles.md': { displayName: 'Open Roles — Apply Now', priority: 0, date: 'Mar 25, 2026' },
-  'resume-linkedin-guide.md': { displayName: 'Resume & LinkedIn Guide', priority: 0, date: 'Mar 25, 2026' },
-  'all-pathways-comprehensive.md': { displayName: 'All Pathways (Full Guide)', priority: 0, date: 'Mar 25, 2026' },
-  'bay-area-jobs.md': { displayName: 'Bay Area Jobs & Target Companies', priority: 1, date: 'Mar 25, 2026' },
-  'immigration-pathways.md': { displayName: 'Immigration Pathways', priority: 2, date: 'Mar 25, 2026' },
-  'international-resources.md': { displayName: 'International Resources', priority: 3, date: 'Mar 25, 2026' },
-  'job-search-queries.md': { displayName: 'Job Search Queries', priority: 5, date: 'Mar 25, 2026' },
-  'latest-jobs.md': { displayName: 'Latest Job Scan', priority: 0, date: 'Mar 25, 2026' },
-  'zahra-profile.md': { displayName: 'Your Profile', priority: 0, date: 'Mar 25, 2026' },
-  'history.md': { displayName: 'Scan History', priority: 10, date: 'Mar 25, 2026' },
+  // Strategy tab
+  'open-roles.md': { displayName: 'Open Roles — Apply Now', priority: 0, date: 'Apr 2, 2026' },
+  'job-search-queries.md': { displayName: 'Job Search Queries', priority: 5, date: 'Apr 2, 2026' },
+  // Resources tab
+  'all-pathways-comprehensive.md': { displayName: 'All Pathways (Full Guide)', priority: 0, date: 'Apr 2, 2026' },
+  'bay-area-jobs.md': { displayName: 'Bay Area Jobs & Target Companies', priority: 1, date: 'Apr 2, 2026' },
+  'immigration-pathways.md': { displayName: 'Immigration Pathways', priority: 2, date: 'Apr 2, 2026' },
+  'international-resources.md': { displayName: 'International Resources', priority: 3, date: 'Apr 2, 2026' },
+  // Updates tab
+  'latest-jobs.md': { displayName: 'Latest Job Scan', priority: 0, date: 'Apr 2, 2026' },
+  'history.md': { displayName: 'Scan History', priority: 10, date: 'Apr 2, 2026' },
+  // Profile tab
+  'zahra-profile.md': { displayName: 'Your Profile', priority: 0, date: 'Apr 2, 2026' },
+  'zahra-full-context.md': { displayName: 'Full Background (from Interview)', priority: 1, date: 'Apr 2, 2026' },
+  'resume.md': { displayName: 'Resume (Fill In & Export)', priority: 2, date: 'Apr 2, 2026' },
+  'resume-linkedin-guide.md': { displayName: 'Resume & LinkedIn Checklist', priority: 3, date: 'Apr 2, 2026' },
+  'interview-prep.md': { displayName: 'Interview Prep Guide', priority: 4, date: 'Apr 2, 2026' },
 };
 
 function getMarkdownFiles(dir) {
