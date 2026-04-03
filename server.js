@@ -10,6 +10,7 @@ const PORT = 3456;
 const SECTIONS = [
   { id: 'strategy', label: 'Strategy', dir: 'strategy', icon: '🎯', description: 'Open roles, search terms, and career planning' },
   { id: 'resources', label: 'Resources', dir: 'resources', icon: '📚', description: 'Immigration, jobs, and support organizations' },
+  { id: 'interview-prep', label: 'Interview Prep', dir: 'interview-prep', icon: '🎤', description: 'How to present yourself, answer questions, and nail every interview' },
   { id: 'updates', label: 'Job Updates', dir: 'updates', icon: '📋', description: 'Latest job listings found for you' },
   { id: 'profile', label: 'Your Profile', dir: 'profile', icon: '👤', description: 'Resume and background info' },
 ];
@@ -25,6 +26,8 @@ const FILE_CONFIG = {
   'bay-area-jobs.md': { displayName: 'Bay Area Jobs & Target Companies', priority: 1, date: 'Apr 2, 2026' },
   'immigration-pathways.md': { displayName: 'Immigration Pathways', priority: 2, date: 'Apr 2, 2026' },
   'international-resources.md': { displayName: 'International Resources', priority: 3, date: 'Apr 2, 2026' },
+  // Interview Prep tab
+  'interview-prep.md': { displayName: 'Interview Prep Guide', priority: 0, date: 'Apr 2, 2026' },
   // Updates tab
   'latest-jobs.md': { displayName: 'Latest Job Scan', priority: 0, date: 'Apr 2, 2026' },
   'history.md': { displayName: 'Scan History', priority: 10, date: 'Apr 2, 2026' },
