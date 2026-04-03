@@ -99,6 +99,9 @@
 7. **Faith-Based / Community Roles** — FCA, InterVarsity, church positions
 8. **Teaching (K-12)** — Biology is a shortage subject in California; emergency credential path
 
+## Portfolio Website
+[zahra-portfolio-chi.vercel.app](https://zahra-portfolio-chi.vercel.app) — Send this link to employers and contacts.
+
 ## Resume
 See `resume.md` in this folder — fill in the [bracketed sections] with your details.
 
