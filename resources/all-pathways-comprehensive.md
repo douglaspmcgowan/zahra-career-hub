@@ -23,6 +23,7 @@
 12. [Australian-Specific Programs](#12-australian-specific-programs)
 13. [Work Visa Summary (E-3, OPT, H-1B, O-1)](#13-work-visa-summary)
 14. [Master Timeline & Action Plan](#14-master-timeline--action-plan)
+15. [No Longer Available / Not Applicable](#no-longer-available--not-applicable)
 
 ---
 
@@ -32,50 +33,7 @@ Enrolling in a graduate program creates a new I-20, maintains F-1 status, and ke
 
 ### A. UC Berkeley Graduate Programs
 
-#### School of Public Health (SPH) — MPH (Master of Public Health)
-- **Why it fits:** Biology BS is ideal preparation. MPH is a 2-year professional degree. Combines her science background with people-facing work, health communications, and marketing.
-- **Concentrations:** Epidemiology, Health Policy, Environmental Health Sciences, Infectious Disease, Community Health Sciences
-- **Deadlines:** Typically December 1 for Fall admission. For Fall 2026, the deadline has likely passed (Dec 2025). **Fall 2027 deadline would be ~December 1, 2026.**
-- **Funding:** Limited for MPH (professional degree), but some partial scholarships, research assistantships, and GSI (teaching assistant) positions. Tuition ~$32,000/year for non-residents.
-- **Keeps her in Berkeley:** Yes
-- **Realism:** HIGH. Her biology BS is directly relevant. Strong option if she can manage tuition.
-- **Cost:** ~$32,000-$35,000/year tuition + living expenses. Total ~$70,000-$80,000/year.
-- **Next steps:** Check if any late/rolling applications exist for Fall 2026. Otherwise, prepare for Fall 2027 deadline (Dec 2026). Contact SPH admissions directly about her situation.
-
-#### Integrative Biology / Plant & Microbial Biology / Molecular & Cell Biology (MS or PhD)
-- **Why it fits:** Direct match with her biology BS.
-- **Deadlines:** Typically December 1-15 for Fall. PhD programs are fully funded (tuition + stipend of ~$38,000-$42,000/year).
-- **Funding:** PhD programs are fully funded. MS programs are generally NOT funded and are less common at Berkeley in biology.
-- **Keeps her in Berkeley:** Yes
-- **Realism:** MODERATE-HIGH for PhD. Requires research experience, strong GRE scores (if required), and letters of recommendation. If she has undergraduate research experience from Buffalo, this is viable.
-- **Cost:** PhD = FREE (stipend + tuition). MS = ~$32,000/year tuition.
-- **Next steps:** Identify faculty whose research interests align with hers. Email professors directly about joining their labs. Apply by Dec 2026 for Fall 2027.
-
-#### Haas School of Business — MBA or MFE
-- **Why it fits:** Marketing certificate shows business interest.
-- **Deadlines:** Multiple rounds. Final round typically March-April for Fall admission.
-- **Funding:** Merit scholarships available but not guaranteed. Average MBA debt is significant.
-- **Keeps her in Berkeley:** Yes
-- **Realism:** LOW-MODERATE. MBA programs want 3-5 years of work experience. She's too early-career. MFE (Financial Engineering) doesn't match her background.
-- **Cost:** ~$70,000/year tuition. Total cost ~$200,000+.
-- **Better alternative:** Apply after 2-3 years of work experience on E-3 visa.
-
-#### Graduate School of Education (GSE)
-- **Why it fits:** Loves teaching, people skills, biology background for science education.
-- **Programs:** MA in Education, credential programs, PhD in Education
-- **Deadlines:** Typically December-January for Fall.
-- **Funding:** GSE fellowships exist but are competitive. GSI positions available.
-- **Keeps her in Berkeley:** Yes
-- **Realism:** MODERATE-HIGH. Her teaching interest and biology background make her a good candidate for science education focus.
-- **Cost:** ~$17,000/year tuition (California resident after 1 year in some cases, but non-resident initially ~$32,000).
-- **Next steps:** Contact GSE about science education tracks. Check credential + MA combo programs.
-
-#### School of Information (MIMS or MIDS)
-- **Why it fits:** If she's interested in AI/data + marketing intersection.
-- **Deadlines:** Typically January for Fall.
-- **Funding:** Limited for professional masters.
-- **Realism:** LOW-MODERATE. Competitive program, typically wants more technical background.
-- **Cost:** ~$65,000 total for MIMS (2-year).
+*All UC Berkeley graduate programs (MPH, PhD Biology, GSE, I-School, Haas MBA) had Fall 2026 application deadlines that have now passed. These have been moved to the "No Longer Available / Not Applicable" section at the bottom of this document. They remain strong options for Fall 2027 -- apply by December 2026.*
 
 ### B. Nearby Universities
 
@@ -109,13 +67,6 @@ Enrolling in a graduate program creates a new I-20, maintains F-1 status, and ke
 - **Cost:** ~$18,000-$20,000/year for non-residents.
 - **Next steps:** Check Fall 2026 deadlines immediately. May still be open.
 
-#### Stanford University
-- **Programs:** MS in Biology, MBA, MA in Education
-- **Deadlines:** Typically December-January for Fall.
-- **Funding:** PhD fully funded. Professional degrees less so.
-- **Realism:** LOW. Extremely competitive. Worth a shot for PhD in biology if she has strong research background.
-- **Cost:** PhD = free. MBA/MA = very expensive.
-
 #### UC San Francisco (UCSF)
 - **Programs:** MS in Global Health, various health science programs
 - **Why it fits:** Biology + health focus, located in SF.
@@ -129,14 +80,13 @@ Note: F-1 status generally requires in-person enrollment. Fully online programs 
 
 | Program | School | Deadline | Funding | Realism | Cost/Year |
 |---------|--------|----------|---------|---------|-----------|
-| MPH | UC Berkeley | Dec 2026 (Fall 2027) | Limited | HIGH | ~$32K |
-| PhD Biology | UC Berkeley | Dec 2026 (Fall 2027) | FULL | MOD-HIGH | $0 (stipend) |
-| MA Education | UC Berkeley | Dec-Jan | Partial | MOD-HIGH | ~$32K |
 | MS Kinesiology | SFSU | Mar-May | GA/TA | HIGH | ~$20K |
 | MA Sport Mgmt | USF | Rolling | Merit | HIGH | ~$28K |
 | MS Biology | SFSU | Mar-May | GA/TA | HIGH | ~$20K |
 | MS Biology | CSUEB | Mar-Jun | GA | HIGH | ~$18K |
 | MBA | USF | Rolling | Merit | MOD | ~$30K |
+
+*UC Berkeley programs (MPH, PhD Biology, MA Education, MIMS/MIDS, MBA) and Stanford have Fall 2026 deadlines that have passed. See "No Longer Available" section for details and Fall 2027 reapplication info.*
 
 ---
 
@@ -377,10 +327,6 @@ The J-1 visa has a "Research Scholar" category that allows foreign nationals to 
 
 ### D. Australian-Specific Fellowships
 
-#### Endeavour Leadership Program (now called Destination Australia)
-- Note: The Endeavour program was replaced. Current Australian government international scholarships are limited.
-- **New Colombo Plan** is inbound to Australia, not outbound — not applicable.
-
 #### Game Plan (Australian Institute of Sport)
 - Not a financial fellowship but a career transition support program for Australian athletes.
 - Provides career counseling, skills assessment, networking.
@@ -438,28 +384,7 @@ Several institutions offer structured post-bac research programs that provide:
 
 ## 6. VOLUNTEER & SERVICE PROGRAMS
 
-### A. AmeriCorps
-
-#### What it is
-- National service program — a domestic version of Peace Corps. Members serve full-time in education, environment, health, and disaster relief.
-- Provides a living stipend (~$18,000-$22,000/year), education award ($6,895 upon completion), and health insurance.
-
-#### Visa issue
-- **AmeriCorps generally requires US citizenship or permanent residency.** Some programs accept DACA recipients.
-- **Zahra would NOT qualify** as an Australian citizen on F-1 unless she has separate work authorization.
-- Some AmeriCorps-affiliated programs (like City Year) have made exceptions, but this is rare and not reliable.
-
-#### Realism: LOW due to citizenship requirement.
-
-### B. Peace Corps
-
-#### What it is
-- US government volunteer program sending Americans abroad for 2 years.
-- **Requires US citizenship.** Zahra cannot apply.
-
-#### Realism: NOT APPLICABLE.
-
-### C. Faith-Based Service Programs
+### A. Faith-Based Service Programs
 
 Several Christian service programs exist that could potentially provide a pathway:
 
@@ -478,7 +403,7 @@ Several Christian service programs exist that could potentially provide a pathwa
 - Hiring international staff is possible but uncommon.
 - Would require R-1 or H-1B sponsorship.
 
-### D. Global Service Year Programs
+### B. Global Service Year Programs
 
 #### [Year Up](https://www.yearup.org)
 - Workforce development program for young adults 18-29.
@@ -487,73 +412,26 @@ Several Christian service programs exist that could potentially provide a pathwa
 - Bay Area locations.
 - Realism: MODERATE if she has OPT.
 
-#### [Venture for America](https://ventureforamerica.org)
-- Fellowship placing recent graduates at startups in emerging cities.
-- **Requires US work authorization** (but does not need to be a citizen).
-- NOT in Berkeley (focuses on other cities).
-- Realism: LOW for Berkeley goal.
-
-### E. United Nations Volunteers / International Service
-- Various UN and international volunteer programs.
-- These would take her OUT of the US.
-- Not applicable for staying in Berkeley.
-
 ### Summary
-Service programs are largely limited by citizenship/work authorization requirements. Faith-based organizations are the most viable pathway here, but they'd need to be combined with R-1 visa sponsorship (see Section 9).
+Service programs are largely limited by citizenship/work authorization requirements. Faith-based organizations are the most viable pathway here, but they'd need to be combined with R-1 visa sponsorship (see Section 9). Several programs (AmeriCorps, Peace Corps, Venture for America, UN Volunteers) have been moved to "No Longer Available" below due to citizenship requirements or location constraints.
 
 ---
 
 ## 7. ENTREPRENEURSHIP
 
-### A. E-2 Treaty Investor Visa
-
-#### What it is
-- A non-immigrant visa for citizens of treaty countries who invest a "substantial amount" in a US business.
-- **Australia IS a treaty country** for E-2 purposes.
-
-#### Requirements
-- Must invest a substantial amount of capital in a bona fide US enterprise.
-- "Substantial" is not defined by law but generally interpreted as $50,000-$100,000+ depending on the business type.
-- The business must not be "marginal" — it must generate significantly more than just support the investor.
-- Must direct and develop the enterprise (at least 50% ownership or operational control).
-
-#### Duration
-- 2 years, renewable indefinitely (as long as the business operates).
-- Allows her to live and work in the US running the business.
-
-#### For Zahra
-- She could start a business in Berkeley (marketing consultancy, science education company, athletic training, etc.).
-- Challenge: She needs $50,000-$100,000+ in capital to invest.
-- The business must be real and operational, not just on paper.
-
-#### Realism: LOW-MODERATE
-- The capital requirement is a significant barrier for a recent graduate.
-- If she has family support or savings, it becomes more viable.
-- An immigration attorney specializing in E-2 is essential.
-
-#### Cost: $50,000-$100,000+ investment + $5,000-$10,000 in legal fees.
-#### Keeps her in Berkeley: Yes.
-
-### B. E-3 Visa in a Self-Employment Context
-
-- The E-3 visa technically requires an employer-employee relationship. Self-employment does NOT qualify.
-- However, she could create a company, have the company "employ" her... but USCIS scrutinizes this heavily.
-- **Not recommended** as a self-employment pathway.
-
-### C. Startup Visa Alternatives
+### A. Startup Visa Alternatives
 
 - The US does not have a formal "startup visa."
-- **International Entrepreneur Rule (IER):** Allows DHS to grant parole to entrepreneurs whose startups have received significant US investor funding ($250,000+) or government grants ($100,000+). Status has been uncertain under different administrations.
-- **Realism for Zahra:** VERY LOW unless she has a funded startup.
+- Most startup visa alternatives require significant funding or investor backing (see "No Longer Available" section for details on the International Entrepreneur Rule).
 
-### D. Freelancing / Contract Work
+### B. Freelancing / Contract Work
 
 - Freelancing is NOT a visa pathway — she'd need existing work authorization (OPT, E-3 from another employer, etc.).
 - However, if she has OPT, she can do freelance/contract work in her field of study.
-- Could be combined with starting to build a business while on OPT, then transitioning to E-2 later.
+- Could be combined with starting to build a business while on OPT.
 
 ### Summary
-Entrepreneurship is viable for Australians through E-2, but the capital requirement makes it challenging for someone at her career stage. Best treated as a long-term option (start a business after working on E-3 for a few years and building capital).
+Entrepreneurship options are limited at her career stage. Freelancing on OPT is viable as a near-term bridge. E-2 Treaty Investor and IER have been moved to "No Longer Available" due to capital requirements (see below).
 
 ---
 
@@ -891,9 +769,6 @@ These require a host organization willing to provide structured training. The J-
 
 ### E. Australian Government Programs
 
-#### Export Market Development Grants (EMDG)
-- For Australian businesses expanding overseas — not applicable for Zahra's situation.
-
 #### Game Plan (Australian Institute of Sport)
 - Career transition support for Australian athletes.
 - Free counseling, skills assessment, career planning.
@@ -909,11 +784,7 @@ These require a host organization willing to provide structured training. The J-
 - The agreement also facilitates certain professional services and mutual recognition of qualifications.
 - **No additional visa categories** beyond E-3 that are unique to Australians (unlike E-2, which is available to many treaty nations).
 
-### G. Working Holiday Visa (Subclass 462) — REVERSE
-- This is Australia's program, not a US pathway. However, worth noting that if Zahra returns to Australia, she can advise American friends about the reciprocal arrangement.
-- The US does not have a working holiday visa program with Australia.
-
-### H. Alumni Networks
+### G. Alumni Networks
 - **University of Buffalo alumni in the Bay Area:** Could provide job referrals and networking.
 - **UC Berkeley Australian alumni:** Likely a small but connected group.
 
@@ -930,13 +801,11 @@ The E-3 visa is the primary Australian advantage. Beyond that, Fulbright (Austra
 |------|----------|-------------|----------|---------|
 | **E-3** | Primary option | Job offer in specialty occupation + Aus citizenship | Weeks to process | HIGH |
 | **OPT** | Bridge to E-3 | Check if certificate qualifies | Apply before June 2026 | UNCERTAIN |
-| **H-1B** | Backup | Job offer + lottery selection | Lottery March, start Oct | MOD (25-30% lottery odds) |
+| **H-1B** | Backup | Job offer + lottery selection | Next lottery March 2027, start Oct 2027 | MOD (25-30% lottery odds) |
 | **O-1** | If elite athlete | Extraordinary ability evidence | No cap/lottery | LOW-MOD |
-| **E-2** | Entrepreneur | $50K-$100K+ investment | Weeks to process | LOW (capital barrier) |
 | **R-1** | Religious work | 2yr denomination membership + religious job | 30-month initial | MOD |
 | **P-1** | Pro athlete | International recognition | Event-based | LOW-MOD |
 | **J-1** | Research/training | Host institution sponsor | Up to 5 years | MOD (2yr home rule risk) |
-| **L-1** | Intracompany transfer | Work for company abroad 1yr, transfer to US | Employer-driven | NOT APPLICABLE now |
 | **EB-3** | Green card | Employer sponsors, PERM process | 1-2+ years | LONG-TERM |
 
 ---
@@ -1003,8 +872,8 @@ The E-3 visa is the primary Australian advantage. Beyond that, Fulbright (Austra
 | Pathway | Keeps in Berkeley | Cost | Timeline | Realism | Income |
 |---------|------------------|------|----------|---------|--------|
 | **E-3 job** | Yes (if employer is local) | $0 | Weeks | HIGH | $50-80K+ |
-| **Graduate school (funded PhD)** | Yes | $0 (stipend ~$40K) | Apply Dec 2026 | MOD-HIGH | $38-42K stipend |
-| **Graduate school (MPH/MA)** | Yes | $32K+/year | Apply Dec 2026 | HIGH | Possible GA income |
+| **Graduate school (funded PhD)** | Yes | $0 (stipend ~$40K) | Apply Dec 2026 for Fall 2027 | MOD-HIGH | $38-42K stipend |
+| **Graduate school (MPH/MA)** | Yes | $32K+/year | Apply Dec 2026 for Fall 2027 | HIGH | Possible GA income |
 | **USF Sport Management MA** | Near (SF) | ~$55K total | Apply NOW | HIGH | Possible GA |
 | **SFSU/CSUEB masters** | Near | ~$20K/year | Apply NOW | HIGH | Possible GA |
 | **Community college (BCC)** | Yes | ~$8K/year | Fall 2026 | HIGH (but low strategy) | Part-time only |
@@ -1018,12 +887,9 @@ The E-3 visa is the primary Australian advantage. Beyond that, Fulbright (Austra
 | **FCA staff** | Yes (if Cal chapter) | $0 | Contact NOW | MOD | $30-45K (donor-supported) |
 | **Fulbright** | Yes (if Cal program) | $0 (funded) | Apply July 2026 | MOD | Full stipend |
 | **AAUW fellowship** | Yes (if Cal program) | $0 | Apply Nov 2026 | MOD | $18-30K |
-| **E-2 entrepreneur** | Yes | $50-100K+ | Months | LOW | Variable |
 | **Professional athletics** | Variable | Legal fees | Uncertain | LOW-MOD | Variable |
 | **O-1 extraordinary** | Yes | $5-15K legal | Months | LOW-MOD | Depends on job |
 | **J-1 research** | Yes | $0 | Months | MOD (2yr rule risk) | $35-50K |
-| **AmeriCorps** | N/A | N/A | N/A | NOT ELIGIBLE | N/A |
-| **Peace Corps** | N/A | N/A | N/A | NOT ELIGIBLE | N/A |
 
 ---
 
@@ -1037,6 +903,113 @@ The E-3 visa is the primary Australian advantage. Beyond that, Fulbright (Austra
 
 ---
 
+## No Longer Available / Not Applicable
+
+The following pathways have been reviewed and are either expired, require US citizenship, or don't apply to Zahra's situation. Kept here for reference only.
+
+### Expired for Fall 2026 (Recheck for Fall 2027)
+
+#### UC Berkeley School of Public Health -- MPH (Master of Public Health)
+- **Why it fits:** Biology BS is ideal preparation. MPH is a 2-year professional degree. Combines her science background with people-facing work, health communications, and marketing.
+- **Concentrations:** Epidemiology, Health Policy, Environmental Health Sciences, Infectious Disease, Community Health Sciences
+- **Funding:** Limited for MPH (professional degree), but some partial scholarships, research assistantships, and GSI positions. Tuition ~$32,000/year for non-residents.
+- **Realism:** HIGH. Her biology BS is directly relevant.
+- **Cost:** ~$32,000-$35,000/year tuition + living expenses.
+- **Status:** Deadline was December 2025 for Fall 2026. **Next window: Fall 2027, apply by ~December 2026.**
+
+#### UC Berkeley PhD Biology / Integrative Biology
+- **Why it fits:** Direct match with her biology BS. PhD programs are fully funded (tuition + stipend of ~$38,000-$42,000/year).
+- **Funding:** PhD = fully funded. MS = generally NOT funded.
+- **Realism:** MODERATE-HIGH for PhD. Requires research experience, strong GRE scores (if required), and letters of recommendation.
+- **Cost:** PhD = FREE (stipend + tuition). MS = ~$32,000/year.
+- **Status:** Deadline was December 2025 for Fall 2026. **Next window: Fall 2027, apply by ~December 2026.**
+
+#### UC Berkeley Graduate School of Education (GSE)
+- **Why it fits:** Loves teaching, people skills, biology background for science education.
+- **Programs:** MA in Education, credential programs, PhD in Education
+- **Funding:** GSE fellowships exist but are competitive. GSI positions available.
+- **Realism:** MODERATE-HIGH for science education focus.
+- **Cost:** Non-resident initially ~$32,000/year.
+- **Status:** Deadline was December 2025 / January 2026 for Fall 2026. **Next window: Fall 2027, apply by ~December 2026.**
+
+#### UC Berkeley School of Information (MIMS / MIDS)
+- **Why it fits:** If interested in AI/data + marketing intersection.
+- **Funding:** Limited for professional masters.
+- **Realism:** LOW-MODERATE. Competitive program, typically wants more technical background.
+- **Cost:** ~$65,000 total for MIMS (2-year).
+- **Status:** Deadline was January 2026 for Fall 2026. **Next window: Fall 2027, apply by ~January 2027.**
+
+#### Stanford University Graduate Programs
+- **Programs:** MS in Biology, MBA, MA in Education
+- **Funding:** PhD fully funded. Professional degrees less so.
+- **Realism:** LOW. Extremely competitive.
+- **Cost:** PhD = free. MBA/MA = very expensive.
+- **Status:** Deadlines were December-January for Fall 2026. **Next window: Fall 2027, apply by ~December 2026.**
+
+#### Haas School of Business -- MBA or MFE
+- **Why it fits:** Marketing certificate shows business interest.
+- **Funding:** Merit scholarships available but not guaranteed. Average MBA debt is significant.
+- **Realism:** LOW-MODERATE. MBA programs want 3-5 years of work experience. She's too early-career.
+- **Cost:** ~$70,000/year tuition. Total cost ~$200,000+.
+- **Status:** Final round was March-April 2026. **Recommended after 2-3 years work experience on E-3 visa.**
+
+#### H-1B Lottery FY2027
+- The FY2027 H-1B lottery registration closed in March 2026.
+- **Next lottery: March 2027 for October 2027 start.** H-1B remains in the main Work Visa Summary table as a future option.
+
+### Not Applicable to Zahra's Situation
+
+#### AmeriCorps
+- National service program providing a living stipend (~$18,000-$22,000/year), education award ($6,895 upon completion), and health insurance.
+- **Why not viable:** Requires US citizenship or permanent residency. Zahra does not qualify as an Australian citizen on F-1.
+
+#### Peace Corps
+- US government volunteer program sending Americans abroad for 2 years.
+- **Why not viable:** Requires US citizenship.
+
+#### E-3 Visa for Self-Employment
+- The E-3 visa technically requires an employer-employee relationship.
+- **Why not viable:** Self-employment does not qualify for E-3. USCIS scrutinizes company-employs-founder arrangements heavily.
+
+#### International Entrepreneur Rule (IER)
+- Allows DHS to grant parole to entrepreneurs whose startups have received significant US investor funding ($250,000+) or government grants ($100,000+).
+- **Why not viable:** Requires $250K+ investor funding. Not realistic for a recent graduate.
+
+#### L-1 Intracompany Transfer
+- Non-immigrant visa for employees transferred from a foreign office to a US office of the same company.
+- **Why not viable:** Requires 1 year of continuous employment abroad for the company requesting the transfer. Not applicable to Zahra's situation.
+
+#### E-2 Treaty Investor Visa
+- Non-immigrant visa for citizens of treaty countries (Australia qualifies) who invest a "substantial amount" ($50,000-$100,000+) in a US business.
+- Duration: 2 years, renewable indefinitely.
+- **Why not viable:** The capital requirement ($50-100K+) is a significant barrier for a recent graduate. Could become viable after several years of work and savings.
+
+#### Endeavour Leadership Program
+- Formerly an Australian government scholarship for international study.
+- **Why not viable:** Program has been replaced. The successor (Destination Australia) is for study IN Australia, not outbound.
+
+#### New Colombo Plan
+- Australian government program for student mobility.
+- **Why not viable:** Inbound to Australia only -- not applicable for staying in the US.
+
+#### Export Market Development Grants (EMDG)
+- Australian government grants for businesses expanding overseas.
+- **Why not viable:** For Australian businesses, not individuals seeking employment or immigration pathways.
+
+#### Working Holiday Visa
+- Australia has working holiday agreements with many countries.
+- **Why not viable:** No US-Australia working holiday visa agreement exists. The US does not offer this visa category with Australia.
+
+#### UN Volunteers / International Service
+- Various UN and international volunteer programs.
+- **Why not viable:** Would take Zahra OUT of the US. Not applicable for staying in Berkeley.
+
+#### Venture for America
+- Fellowship placing recent graduates at startups in emerging cities.
+- **Why not viable:** Not available in Berkeley/Bay Area. Program focuses on other US cities.
+
+---
+
 *Disclaimer: Immigration law is complex and changes frequently. This document is for informational planning purposes. Zahra should consult a licensed immigration attorney for any visa-related decisions, particularly regarding OPT eligibility, R-1 qualification, and E-3 job matching. Many of the specific deadlines, costs, and program details referenced here should be verified directly with the institutions, as they may have changed.*
 
-*Compiled March 2026. Web search tools were unavailable during compilation — all information is based on knowledge current through early 2025. Specific deadlines, costs, and program availability should be verified online.*
+*Compiled March 2026, updated April 2026. Web search tools were unavailable during initial compilation — all information is based on knowledge current through early 2025. Specific deadlines, costs, and program availability should be verified online.*
